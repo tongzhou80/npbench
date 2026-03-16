@@ -1,0 +1,22 @@
+{
+    "benchmark": {
+        "name": "Prime Counting",
+        "short_name": "primecount",
+        "relative_path": "prime_counting",
+        "module_name": "prime_counting",
+        "func_name": "prime_count",
+        "kind": "microbench",
+        "domain": "Other",
+        "dwarf": "unstructured_grids",
+        "parameters": {
+            "S": { "N": 10000 },
+            "M": { "N": 100000 },
+            "L": { "N": 500000 },
+            "paper": { "N": 1000000 }
+        },
+        "input_args": ["N"],
+        "array_args": [],
+        "output_args": [],
+        "norm_error": 0
+    }
+}

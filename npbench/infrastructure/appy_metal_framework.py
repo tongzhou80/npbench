@@ -15,8 +15,13 @@ class APPyMetalFramework(Framework):
         return getattr(appy, '__version__', '0.1')
 
     def copy_func(self) -> Callable:
+        import numpy as np
         import appy.np_shared as nps
-        return nps.copy
+        def copy_and_cast(arr):
+            if hasattr(arr, 'dtype') and arr.dtype == np.float64:
+                arr = arr.astype(np.float32)
+            return nps.copy(arr)
+        return copy_and_cast
 
     def imports(self) -> Dict[str, Any]:
         import appy
