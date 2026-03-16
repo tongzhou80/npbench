@@ -1,0 +1,10 @@
+{
+    "framework": {
+        "simple_name": "appy_metal",
+        "full_name": "APPy (Metal)",
+        "prefix": "ap",
+        "postfix": "appy",
+        "class": "APPyMetalFramework",
+        "arch": "gpu"
+    }
+}

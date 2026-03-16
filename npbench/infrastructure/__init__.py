@@ -12,4 +12,5 @@ from .numba_framework import *
 from .pythran_framework import *
 from .dpnp_framework import *
 from .appy_framework import *
+from .appy_metal_framework import *
 from .jax_framework import *
